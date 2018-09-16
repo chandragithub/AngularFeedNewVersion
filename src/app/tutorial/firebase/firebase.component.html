@@ -1,0 +1,68 @@
+<div class="taf-container container-height">
+    <div class="" *ngIf="isPageLoadingError">
+        <page-not-found> </page-not-found>
+    </div>
+    <div class="container taf-inner-container" *ngIf="!isPageLoadingError">
+      <div class="row taf-container-row">
+            <div class="col-md-3 tutorial-index">
+                <div class="list-of-articles">
+                    <div class="tutorial-name">
+                         {{ technology | uppercase }}
+                    </div>
+                    <a *ngFor="let tutorialsList of tutorialLists" [routerLink]="['/tutorials/firebase', tutorialsList.url]" (click)="tutorialClick()">
+                        <div class="articles article-list" [id]="tutorialsList.url">
+                            <ul>
+                                <li>
+                                    <p>
+                                        {{ tutorialsList.title }} 
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        <div class="col-md-8 tutorial-body" *ngFor="let tutorial of tutorials">
+            <!-- <div class="tutorial-name">
+                
+            </div> -->
+            <div class="tutorial-content">
+                <div class="title article-head">
+                    <h4> {{ tutorial.title }} </h4>
+                </div>
+                <div class="title article-body">
+                    <div class="mainindex" *ngFor="let mainIndex of tutorial.index">
+                        <h6 *ngIf="mainIndex.title" [attr.id]="mainIndex.title.split(' ').join('_')"> {{ mainIndex.title }} </h6>
+                        <div *ngFor="let subIndex of mainIndex.data">
+                            <p class="introduction" [innerHtml]="subIndex.introduction"> </p>
+                            <ul class="list-content" *ngFor="let list of subIndex.list">
+                                <li> {{list}} </li>
+                            </ul>
+                            <ngx-prism [language]="subIndex.code_type" [hooks]="hooks" [code]="content" [interpolation]="interpolate" *ngIf="subIndex.code_snippet">
+                                {{ subIndex.code_snippet }}
+                            </ngx-prism>
+                            <div class="col-md-12 subimages-container">
+                                <img class="intro-image" [src]="'assets/images/firebase/' + subIndex.image" *ngIf="subIndex.image">
+                            </div>
+                            <iframe class="iframe" [src]="subIndex.stackblitz_url | safeUrl" *ngIf="subIndex.stackblitz_url"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-md-12 next-back-container" *ngFor="let tutorialsList of tutorialLists, index as i">
+                    <div class="col-md-6">
+                        <a [routerLink]="['/tutorials/typescript_angular_firebase', tutorialLists[i].url]" class="btn af-back-button pull-left" role="button"> {{"back" | uppercase}}  </a>
+                    </div>
+                    <div class="col-md-6 ">
+                        <a [routerLink]="['/tutorials/typescript_angular_firebase', tutorialLists[i+1].url]" class="btn af-next-button pull-right" role="button"> {{"next" | uppercase}} </a>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="col-md-1">
+            <div class="fb-share-button social-sharing" [attr.data-href]="pageFBUrl" data-layout="button_count" data-size="small" data-action="like"
+                data-show-faces="true" data-share="true"></div>
+            <div class="g-plus social-sharing" data-action="share" [attr.data-href]="googleUrl" data-size="medium" data-width="100"></div>
+        </div>
+      </div>
+    </div>
+</div>

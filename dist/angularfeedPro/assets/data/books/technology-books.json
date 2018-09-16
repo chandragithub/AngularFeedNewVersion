@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Angular 2 Cookbook",
+        "tag": "Angular 2",
+        "image": "angular2-cookbook.png",
+        "url": "https://amzn.to/2MoJqa8"
+    },
+    {
+        "name": "",
+        "tag": "Angular 2",
+        "image": "angular6-for-enterprise-ready-web-applications.png",
+        "url": "https: //amzn.to/2vNPBNN"
+    },
+    {
+        "name": "Angular 2 Cookbook",
+        "tag": "Angular 2",
+        "image": "architecting-angular-application-with-redux-rxjs-and-ngrx.png",
+        "url": "https://amzn.to/2OPyqUE"
+    },
+    {
+        "name": "Angular 2 Cookbook",
+        "tag": "Angular 2",
+        "image": "beginning-angular-with-typescript.png",
+        "url": "https://amzn.to/2AVuiQ2"
+    },
+    {
+        "name": "Angular 2 Cookbook",
+        "tag": "Angular 2",
+        "image": "asp-core-and-angular5.png",
+        "url": "https://amzn.to/2nmI9oV"
+    },
+    {
+        "name": "Angular 2 Cookbook",
+        "tag": "Angular 2",
+        "image": "unraveling-angular2.png",
+        "url": "https://amzn.to/2M7wubM"
+    }
+]

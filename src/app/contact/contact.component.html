@@ -1,0 +1,21 @@
+<div class="ag-contact container-height">
+  <div class="form-container">
+    <div class="image-holder"></div>
+    <form novalidate (ngSubmit)="sendMail(form)" #form="ngForm">
+      <h2 class="text-center">
+        <strong>Contact </strong>Us</h2>
+      <div class="form-group">
+        <input class="form-control" type="name" id="name" name="name" placeholder="* Full Name" required minlength="3" [(ngModel)]="name" />
+      </div>
+      <div class="form-group">
+        <input class="form-control" type="email" name="email" placeholder="* Your Email" required [(ngModel)]="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"/>
+      </div>
+      <div class="form-group">
+        <textarea class="af-text" id="message" name="message" required [(ngModel)]="message" placeholder="* How may we help you?"></textarea>
+      </div>
+      <div class="form-group contact-submit">
+        <button [disabled]="!form.valid" class="btn btn-primary" type="submit">{{"submit" | uppercase}}</button>
+      </div>
+    </form>
+  </div>
+</div>

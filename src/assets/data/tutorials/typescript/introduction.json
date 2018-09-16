@@ -1,0 +1,66 @@
+[
+    {
+        "postedBy": "ChandraShekher",
+        "email": "chandrashekher@hotmail.com",
+        "title": "Introduction",
+        "image": "angularnodesetup.jpg",
+        "technology": "typescript",
+        "url": "introduction-to-typescript-a-typed-superset-of-javascript",
+        "index": [
+            {
+                "title": "",
+                "data": [
+                    {
+                        "introduction": "Modern web applications are evolving in very fast-pace and there are lot of technologies working day and night to make it best, in those TypeScript is one of them. It played a vital role to increase the performance of web application and reduce the work load of front-end developers by introducing Object Oriented Programming concept to it. The developers with knowledge of other static-typing programming languages, for example, Java, C#, may find TypeScript very easy to understand.",
+                        "image": "",
+                        "code_snippet": "",
+                        "stackblitz_url": ""
+                    },
+                    {
+                        "introduction": "As defined TypeScript is an open source strictly typed superset of JavaScript or ES-5 (ECMAScript 5) and it is developed by Microsoft and has large developers community. TypeScript alternative is ECMAScript 6 which is also need to be transpiled into ECMAScript 5 in all the browsers but ECMAScript 6 has all the features of TypeScript and TypeScript has many more features as compared to ECMAScript 6. Look at the parameter defined in TypeScript as below,",
+                        "image": "",
+                        "code_snippet": "function sum (a: number, b:number) {\n   return a + b; \n }",
+                        "code_type": "js",
+                        "stackblitz_url": ""
+                    }
+                ]
+            },
+            {
+                "title": "Features of TypeScript",
+                "data": [
+                    {
+                        "introduction": "There are a lot of features in TypeScript, they are Class, Object, Arrow Function, Inheritance, Interface, Constants and Block Scope, Delegation, Spread, Rest parameter, Modules, Typing, Linting, Shapes, Interfaces, Type Interfaces, Type keyword, Decorators, Property Decorators, Class Decorators, Parameter Decorators and many more which we are going to discuss below,"
+                    },
+                    {
+                        "introduction": "<i> <b> Class: </b> </i> Class is a blueprint of an object and is used to inherit methods and propeties of another object through inheritance, TypeScript prototypical inheritance model function like a class based programming language such as Java.",
+                        "image": "",
+                        "code_snippet": "class Person { \n   constructor() {\n     ...    \n   }\n   getName() { \n     ... \n   }\n }",
+                        "code_type": "js",
+                        "stackblitz_url": ""
+                    },
+                    {
+                        "introduction": "<i><b> Object: </b></i> An object is an instance of a class which is created by using the new operator. When we use a dot notation to access a method on the object, keyword <i> this </i>  will refer to the object.",
+                        "image": "",
+                        "code_snippet": "let person = new Person();\n person.getName();",
+                        "code_type": "js",
+                        "stackblitz_url": ""
+                    },
+                    {
+                        "introduction": "<i><b> Arrow Function: </b></i> Arrow function is a short way of writing function in TypeScript, where we use => to define a function, this also called as fat arrow notation, it can be used to defined anonymous functions in easy way.",
+                        "image": "",
+                        "code_snippet": "items.forEach((x) => { \n   ... \n });",
+                        "code_type": "js",
+                        "stackblitz_url": ""
+                    },
+                    {
+                        "introduction": "<i><b> Const: </b></i> Once the value is assined to an identifier with a type const, then we can't change or re-assigned different value to the same identifier.",
+                        "image": "",
+                        "code_snippet": "const technology = 'typescript';\n technology = 'ecmascript 6'; // will throw an error",
+                        "code_type": "js",
+                        "stackblitz_url": ""
+                    }
+                ]
+            }
+        ]
+    }
+]

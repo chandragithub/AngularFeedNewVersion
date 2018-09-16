@@ -1,0 +1,52 @@
+[
+    {
+        "postedBy": "ChandraShekher",
+        "email": "chandrashekher@hotmail.com",
+        "title": "Introduction",
+        "image": "angularnodesetup.jpg",
+        "technology": "typescript",
+        "url": "introduction",
+        "index": [
+            {
+                "title": "",
+                "data": [
+                    {
+                        "introduction": "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.",
+                        "image": "",
+                        "code_snippet": "",
+                        "stackblitz_url": "",
+                        "list": []
+                    }
+                ]
+            },
+            {
+                "title": "Features of Git",
+                "data": [
+                    {
+                        "introduction": "",
+                        "list": [
+                            "Branching and Merging",
+                            "Small and Fast",
+                            "Distributed",
+                            "Data Assurance",
+                            "Staging Area",
+                            "Free and Opensource"
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Branching and Merging",
+                "data": [
+                    {
+                        "introduction": "",
+                        "image": "",
+                        "code_snippet": "",
+                        "stackblitz_url": "",
+                        "list": []
+                    }
+                ]
+            }
+        ]
+    }
+]

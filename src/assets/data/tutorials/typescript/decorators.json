@@ -1,0 +1,43 @@
+[
+    {
+        "postedBy": "ChandraShekher",
+        "email": "chandrashekher@hotmail.com",
+        "title": "Decorators",
+        "image": "angularnodesetup.jpg",
+        "technology": "typescript",
+        "url": "introduction-to-typescript-a-typed-superset-of-javascript",
+        "index": [
+            {
+                "title": "",
+                "data": [
+                    {
+                        "introduction": "The command-line TypeScript compiler can be installed as a Node.js package. Before installing Typescript we need to install NodeJS from <a href='nodejs.org' target='_blank'> nodejs.org </a> and open your command line interface and follow the following things,",
+                        "image": "",
+                        "code_snippet": "",
+                        "stackblitz_url": ""
+                    }
+                ]
+            },
+            {
+                "title": "Install",
+                "data": [
+                    {
+                        "introduction": "For installing typescript into your computer please type below code in your CMD/Terminal,",
+                        "code_snippet": "npm install -g typescript",
+                        "code_type": "js"
+                    }
+                ]
+            },
+            {
+                "title": "Compile",
+                "data": [
+                    {
+                        "introduction": "For compile typescript into Javascript we need to use typescript compiler (tsc) through CMD/Terminal for which you need to transpile into JavaScript,",
+                        "code_snippet": "tsc helloworld.ts",
+                        "code_type": "js"
+                    }
+                ]
+            }
+        ]
+    }
+]

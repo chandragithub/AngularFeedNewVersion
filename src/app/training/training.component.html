@@ -1,0 +1,31 @@
+<div class="angular-articles container-height">
+    <div class="highlight-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="intro">
+                        <!-- <img class="highlight-img" [src]="'assets/images/technology/' + technologyName + '.png'"> -->
+                        <h5> {{trainingName | uppercase}} </h5>
+                        <div class="total-count"> {{"total lessions" | uppercase}} - {{ articleTotalCount }} </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container article-list">
+        <div class="row">
+            <div class="col-md-12" *ngFor="let article of articleList">
+                <a class="angular-href" [routerLink]="['/angular', article.url]">
+                    <div class="article-wrap">
+                        <h4 class=""> {{ article.title}} </h4>
+                        <p class=""> {{ article.description }} <span> Read More...</span></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container" *ngIf="totalCount.length > 10">
+        <!-- <pagination [boundaryLinks]="true" [totalItems]="totalCount.length" (pageChanged)="pageChanged($event)"
+            previousText="&lsaquo;" nextText="&rsaquo;" firstText="&laquo;" lastText="&raquo;"></pagination> -->
+    </div>
+</div>

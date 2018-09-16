@@ -1,0 +1,38 @@
+[
+    {
+        "postedBy": "ChandraShekher",
+        "email": "chandrashekher@hotmail.com",
+        "title": "Interfaces",
+        "image": "angularnodesetup.jpg",
+        "technology": "typescript",
+        "url": "introduction-to-typescript-a-typed-superset-of-javascript",
+        "index": [
+            {
+                "title": "",
+                "data": [
+                    {
+                        "introduction": "Interfaces in TypeScript have two types of usage scenarios. Interfaces can be used to describe the shape of values or act as classes contracts.",
+                        "image": "",
+                        "code_snippet": "",
+                        "stackblitz_url": ""
+                    }
+                ]
+            },
+            {
+                "title": "Describe the shape of values",
+                "data": [
+                    {
+                        "introduction": "In typical JavaScript code, we use plain JavaScript objects as the payload of communication. But the format of these JavaScript objects is opaque. The caller and receiver need to implicitly agree on the format, which usually involves collaboration between different developers. This type of opacity usually causes maintenance problems. ",
+                        "code_snippet": "",
+                        "code_type": "js"
+                    },
+                    {
+                        "introduction": "Interfaces in TypeScript provide a way to describe the shape of an object. If we update interface User to remove the property age and add a new property dateOfBirth, TypeScript compiler will throw errors on all the places where the property age is used in the whole code base. This is a huge benefit for code refactoring and maintenance.",
+                        "code_snippet": "interface User { \n   name: string;\n   email: string;\n   age: number; \n } \n\n function processUser(user: User) { \n   console.log(user.name); \n } \n\n processUser({ \n   name: 'Alex',\n   email: 'alex@example.org', \n   age: 34, \n });",
+                        "code_type": "js"
+                    }
+                ]
+            }
+        ]
+    }
+]

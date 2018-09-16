@@ -1,0 +1,73 @@
+<div class="article-template-container container-height">
+  <div class="" *ngIf="isPageLoadingError">
+    <page-not-found> </page-not-found>
+  </div>
+  <div class="container article-tempalate" *ngIf="!isPageLoadingError">
+    <div class="row">
+      <div class="col-md-8 article-page">
+        <div *ngFor="let article of articles">
+          <div class="title article-head">
+            <h4> {{ article.title }} </h4>
+            <p> <span> Posted by </span> <a [routerLink]="'../../profile/'+ article.profile"> {{ article.postedBy }}
+              </a></p>
+          </div>
+          <div class="title article-body">
+            <div class="mainindex" *ngFor="let mainIndex of article.index">
+              <h6 *ngIf="mainIndex.title" [attr.id]="mainIndex.title.split(' ').join('_')">
+                <!-- <fa-icon [icon]="faCoffee"></fa-icon>  -->
+                {{ mainIndex.title }}
+              </h6>
+              <div *ngFor="let subIndex of mainIndex.data">
+                <p class="introduction" [innerHTML]="subIndex.introduction"> </p>
+                <ngx-prism [language]="subIndex.code_type" [hooks]="hooks" [code]="content" [interpolation]="interpolate"
+                  *ngIf="subIndex.code_snippet">
+                  {{ subIndex.code_snippet }}
+                </ngx-prism>
+                <img class="intro-image" [src]="'assets/images/angular/' + subIndex.image" *ngIf="subIndex.image">
+                <p class="image-tag" *ngIf="subIndex.imgTag"> <i> fig: </i> {{ subIndex.imgTag }}</p>
+                <iframe class="iframe" [src]="subIndex.stackblitz_url | safeUrl" *ngIf="subIndex.stackblitz_url"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="disqus-container">
+            <disqus class="disqus" [identifier]="pageId" [url]="pageUrl"></disqus>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="list-of-articles angular-article-list">
+          <h6> Latest Articles </h6>
+          <div class="articles" *ngFor="let articleList of articleLists">
+            <ul class="article-list">
+              <li>
+                <p>
+                  <a [id]="articleList.url" [routerLink]="['/articles', articleList.url]" (click)="articleClick()"> {{
+                    articleList.title }} </a>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="get-a-ticket intro">
+          <img class="highlight-img" [src]="'assets/images/technology/' + technologyName + '.png'">
+          <h6 class="training-title"> {{technologyName + " master class " | uppercase}} </h6>
+          <p class="training-msg">Join our upcoming online training!</p>
+          <button class="btn af-button margin-top-0 training" role="button" routerLink=""> {{ "get a ticket" |
+            uppercase }} </button>
+        </div>
+        <div class="books-container">
+            <h5> Best Angular books to read </h5>
+            <a  *ngFor="let book of bookList" [href]="book.url" target="_blank"><img class="books-image" [src]= "'assets/images/books/'+ book.image"> </a>
+        </div>
+        <div class="books-container">
+            <a href="http://www.hostg.xyz/aff_c?offer_id=6&aff_id=1586&file_id=1" target="_blank">
+              <img src="assets/images/market/hostinger.png" class="advertiser-image"/>
+            </a>
+        </div>
+        <!-- <div class="ad-container">
+              <ng-adsense></ng-adsense>
+          </div> -->
+      </div>
+    </div>
+  </div>
+</div>

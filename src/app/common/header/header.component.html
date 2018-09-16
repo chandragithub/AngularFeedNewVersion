@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-md navigation-clean-button af-fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand logo" routerLink="">
+      <img src="assets/images/angularfeed-transparent.png"> <span class="brand-one"> Angular</span><span class="brand-two">Feed</span>
+    </a>
+    <button class="navbar-toggler menu-bar" data-toggle="collapse" data-target="#navcol-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="navbar-toggler-icon" (click)="onMenuOpen()"><i class="fa fa-bars mobile-menu" aria-hidden="true"></i></span>
+    </button>
+    <div class="overlay" [hidden]="!subMenu">
+      <i class="fa fa-times close-submenu" (click)="onMenuClose()" aria-hidden="true"></i>
+      <p *ngFor="let menu of menu"> 
+        <a [routerLink]="menu.url" (click)="onMenuClose()"> {{ menu.name | uppercase }} </a>
+      </p>
+    </div>
+    <div class="collapse navbar-collapse" id="navcol-1">
+      <ul class="nav navbar-nav ml-auto af-tabs">
+        <li class="nav-item" role="presentation" *ngFor="let menu of menu">
+          <a class="nav-link" [id]="menu.name" [routerLink]="menu.url" routerLinkActive="active"> {{ menu.name | uppercase }} </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

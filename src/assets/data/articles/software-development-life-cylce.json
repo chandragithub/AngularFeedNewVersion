@@ -1,0 +1,35 @@
+[
+    {
+        "postedBy": "ChandraShekher",
+        "email": "chandrashekher@hotmail.com",
+        "title": "Software Development Life Cycle",
+        "image": "angularnodesetup.jpg",
+        "technology": "typescript",
+        "url": "introduction-to-typescript-a-typed-superset-of-javascript",
+        "index": [
+            {
+                "title": "Introduction",
+                "data": [
+                    {
+                        "introduction": "We all know how much software product cost if we lauch it on the production server without any proper planning, designing and testing. There were lots of software which failed before launching it to the production server and the reason beyond the failure was not following proper SDLC process while developing software products. So following the SDLC process in product development will increase your revenue and save lot of time.",
+                        "image": "",
+                        "code_snippet": "",
+                        "stackblitz_url": ""
+                    }
+                ]
+            },
+            {
+                "title": "What is SDLC?",
+                "data": [
+                    {
+                        "introduction": "Software development lifecycle (SDLC) is a multistep, iterative process, structured in a methodical way to deliver a quality software products which meets a business expectation and trust.",
+                        "image": "sdlcphases.png",
+                        "code_snippet": "",
+                        "code_type": "js",
+                        "stackblitz_url": ""
+                    }
+                ]
+            }
+        ]
+    }
+]

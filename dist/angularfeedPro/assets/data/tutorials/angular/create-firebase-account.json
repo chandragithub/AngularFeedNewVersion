@@ -1,0 +1,44 @@
+[
+    {
+        "postedBy": "ChandraShekher",
+        "email": "chandrashekher@hotmail.com",
+        "title": "Create Firebase Account",
+        "image": "angularnodesetup.jpg",
+        "technology": "typescript",
+        "url": "introduction",
+        "index": [
+            {
+                "title": "",
+                "data": [
+                    {
+                        "introduction": "Google provides very easy to use Firebase console where you need to create Firebase account through <a href='https://firebase.google.com' target='_blank'> https://firebase.google.com </a>, after this we need to create account and login into Firebase Account. Once we successfully login into the firebase console the Firebase home page will look like below,",
+                        "image": "firebase-welcome.png",
+                        "code_snippet": "",
+                        "stackblitz_url": ""
+                    },
+                    {
+                        "introduction": "Create new Firebase application",
+                        "image": "create-project.png",
+                        "code_snippet": "",
+                        "code_type": "js",
+                        "stackblitz_url": ""
+                    },
+                    {
+                        "introduction": "Selecting Web Application",
+                        "image": "firebase-web-app.png",
+                        "code_snippet": "",
+                        "code_type": "js",
+                        "stackblitz_url": ""
+                    },
+                    {
+                        "introduction": "Add Firebase to Web application",
+                        "image": "add-firebase-to-web.png",
+                        "code_snippet": "",
+                        "code_type": "js",
+                        "stackblitz_url": ""
+                    }
+                ]
+            }
+        ]
+    }
+]

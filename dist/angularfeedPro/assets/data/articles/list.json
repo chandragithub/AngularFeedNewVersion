@@ -1,0 +1,51 @@
+[
+    {
+        "title": "Quick start Angular development with Angular CLI",
+        "image": "angularnodesetup.jpg",
+        "technology": "angular",
+        "url": "quick-start-angular-development-with-angular-cli",
+        "description": "Angular is a Single Page Client side JavaScript framework which mainly used Mobile First approach, but nowadays it is widely used to build web application. It is build and supported by Google and has large developer Community."
+    },
+    {
+        "title": "Preventing Cross-site Scripting attack in Angular",
+        "image": "awsnode.png",
+        "technology": "angular",
+        "url": "preventing-cross-site-scripting-attack-in-angular",
+        "description": "Cross-site Scripting attack is also known as XSS which allows attacker to inject client side scripts into web application viewed by other users. "
+    },
+    {
+        "title": "Routing and Navigation in Angular",
+        "image": "routing-introduction.png",
+        "technology": "angular",
+        "url": "routing-and-navigation-in-anguar",
+        "description": "Routing is a path which is use to navigate one page to another page in Angular application. Whenever you use browser and click some link you will get routing experience, as you enter a url on browser search bar and it will open your requested page"
+    },
+    {
+        "title": "Basic of firebase and its features.",
+        "image": "",
+        "technology": "angular",
+        "url": "basic-of-firebase-and-its-features",
+        "description": "Firebase is a Single Page Client side JavaScript framework which mainly used Mobile First approach, but nowadays it is widely used to build web application. It is build and supported by Google and has large developer Community."
+    },
+    {
+        "title": "Deploy Angular application with Firebase",
+        "image": "",
+        "technology": "react",
+        "url": "",
+        "description": "Coming Soon"
+    },
+    {
+        "title": "Introduction to Typescript - A typed superset of JavaScript",
+        "image": "angularnodesetup.jpg",
+        "technology": "typescript",
+        "url": "introduction-to-typescript-a-typed-superset-of-javascript",
+        "description": "Modern web is evolving in very fast-pace and there were lots of technology beyond this, in those technologies TypeScript is one of them. It played a vital role to increase the performance of web application and reduce the work load of front-end developers."
+    },
+    {
+        "title": "Software Development Life Cycle",
+        "image": "",
+        "technology": "software",
+        "url": "software-development-life-cylce",
+        "description": "We all know how much software product cost if we lauch it on the production server without any proper planning, designing and testing."
+    }
+]

@@ -1,0 +1,110 @@
+.ag-contact {
+  background:#f5f5f5 !important;
+  padding:40px 0;
+}
+
+.ag-contact .image-holder {
+  display:table-cell;
+  width:auto;
+  background-image:url('/assets/images/contact/meeting.jpg');
+  background-size:cover;
+}
+
+.ag-contact .form-container {
+  display:table;
+  max-width:900px;
+  width:90%;
+  margin:0 auto;
+  box-shadow:1px 1px 5px rgba(0,0,0,0.1);
+}
+
+.ag-contact form {
+  display:table-cell;
+  width:400px;
+  background-color:#ffffff;
+  padding:40px 60px;
+  color:#505e6c;
+}
+
+@media (max-width:991px) {
+  .ag-contact form {
+    padding:40px;
+  }
+}
+
+.ag-contact form h2 {
+  font-size:24px;
+  line-height:1.5;
+  margin-bottom:30px;
+}
+
+.ag-contact form .form-control {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    color: inherit;
+    height: 40px;
+    border: 2px solid #70bbb4;
+}
+
+.ag-contact form .form-check {
+  font-size:13px;
+  line-height:20px;
+}
+
+.ag-contact form .btn-primary {
+  background: linear-gradient(25deg,#af2f31,#ef697f 50%) !important;
+  border: none;
+  border-radius: 0;
+  padding: 11px;
+  box-shadow: none;
+  margin-top: 0;
+  text-shadow: none;
+  outline: none !important;
+  width: 130px;
+
+}
+
+.ag-contact form .btn-primary:hover, .register-photo form .btn-primary:active {
+  background: linear-gradient(25deg,#50adad,#69bfb7 50%);
+}
+
+.ag-contact form .btn-primary:active {
+  transform:translateY(1px);
+}
+
+.ag-contact form .already {
+  display:block;
+  text-align:center;
+  font-size:12px;
+  color:#6f7a85;
+  opacity:0.9;
+  text-decoration:none;
+}
+
+.af-text{
+    width: 100%;
+    height: 100px;
+    color:#505e6c;
+    border: 2px solid #70bbb4;
+    padding: 10px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #505e6c;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #505e6c;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #505e6c;
+}
+
+.contact-submit {
+    text-align: center;
+}
+

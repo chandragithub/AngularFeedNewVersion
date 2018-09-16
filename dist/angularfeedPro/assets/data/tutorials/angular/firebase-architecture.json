@@ -1,0 +1,40 @@
+[
+    {
+        "postedBy": "ChandraShekher",
+        "email": "chandrashekher@hotmail.com",
+        "title": "Firebase Architecture",
+        "image": "angularnodesetup.jpg",
+        "technology": "typescript",
+        "url": "introduction",
+        "index": [
+            {
+                "title": "",
+                "data": [
+                    {
+                        "introduction": "Firebase application consists of static content and assets in client side where you could use Angular, React, Vue and and all your dynamic content and user data is stored and retrieved from Firebase.",
+                        "image": "firebasearchitecture.png",
+                        "code_snippet": "",
+                        "stackblitz_url": "",
+                        "list": []
+                    }
+                ]
+            },
+            {
+                "title": "Firebase Provides",
+                "data": [
+                    {
+                        "introduction": "",
+                        "list": [
+                            "Authentication",
+                            "Database/Firestore",
+                            "Storage",
+                            "Hosting",
+                            "Analytics",
+                            "Messaging"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,23 @@
+[
+    {
+        "postedBy": "ChandraShekher",
+        "email": "chandrashekher@hotmail.com",
+        "title": "Deploy Angular application with Firebase",
+        "image": "angularnodesetup.jpg",
+        "technology": "typescript",
+        "url": "introduction",
+        "index": [
+            {
+                "title": "",
+                "data": [
+                    {
+                        "introduction": "Comming Soon...",
+                        "image": "",
+                        "code_snippet": "",
+                        "stackblitz_url": ""
+                    }
+                ]
+            }
+        ]
+    }
+]

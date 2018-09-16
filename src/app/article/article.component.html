@@ -1,0 +1,32 @@
+<div class="angular-articles container-height">
+  <div class="highlight-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="intro">
+            <i class="fa fa-book"></i>
+            <h5> {{"articles" | uppercase}} </h5>
+            <div class=""> {{ "Find our top Articles in below technologies" | uppercase }} </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ul>
+    <li *ngFor="let it of item">
+      {{ it.firstname }}
+    </li>
+  </ul>
+  <div class="features-boxed">
+    <div class="container">
+      <div class="row justify-content-center features">
+        <div class="col-sm-6 col-md-5 col-lg-4 item" *ngFor="let article of articleLists">
+          <div class="box technology-box" [routerLink]="'/articles/' +article.url" (click)="articleClick()">
+            <!-- <img [src]="'assets/images/articles/'+ article.image + '.png'"> -->
+            <p class="description"> {{ article.title }} </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

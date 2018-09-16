@@ -1,0 +1,31 @@
+[
+    {
+        "postedBy": "ChandraShekher",
+        "email": "chandrashekher@hotmail.com",
+        "title": "Functions",
+        "image": "angularnodesetup.jpg",
+        "technology": "typescript",
+        "url": "introduction-to-typescript-a-typed-superset-of-javascript",
+        "index": [
+            {
+                "title": "",
+                "data": [
+                    {
+                        "introduction": "Functions are important building blocks of JavaScript applications. TypeScript adds type information to functions. The type of a function is defined by the types of its arguments and return value. we only need to declare function types either on the variable declaration side or on the function declaration side. TypeScript compiler can infer the types from context information.",
+                        "image": "",
+                        "code_snippet": "let size: (str: string) => number = function(str) { \n   return str.length; \n };",
+                        "stackblitz_url": "",
+                        "code_type": "js"
+                    },
+                    {
+                        "introduction": "Function types are useful when declaring high-order functions, that is, functions that take other functions as arguments or return other functions as results. When specifying types of functions used as arguments or return values, only type information is required.",
+                        "image": "",
+                        "code_snippet": "function forEach(array: any[], iterator: (any) => void) { \n   for (let item in array) { \n    iterator(item) \n   } \n } \n\n forEach([1, 2, 3], item => console.log(item)); // -> Output 1, 2, 3}",
+                        "stackblitz_url": "",
+                        "code_type": "js"
+                    }
+                ]
+            }
+        ]
+    }
+]

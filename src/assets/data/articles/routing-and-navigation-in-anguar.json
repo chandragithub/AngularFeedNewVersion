@@ -1,0 +1,76 @@
+[
+    {
+        "postedBy": "ChandraShekher",
+        "email": "chandrashekher@hotmail.com",
+        "title": "Routing and Navigation in Angular ",
+        "image": "",
+        "technology": "angular",
+        "url": "routing-and-navigation-in-angular",
+        "profile": "chandrashekher",
+        "index": [
+            {
+                "title": "Introduction",
+                "data": [
+                    {
+                        "introduction": "Routing is a path which is use to navigate one page to another page in Angular application. Whenever you use browser and click some link you will get routing experience, as you enter a url on browser search bar and it will open your requested page, whenever you click on a link and browser navigates you to another page. Click on back and forward buttons on browsers it navigates to back and forward using browser history of the page.",
+                        "image": "routing.png",
+                        "imgTag":"Routing in Angular",
+                        "code_snippet": "",
+                        "stackblitz_url": ""
+                    },
+                    {
+                        "introduction": "Through router it is possible to build Single Page application (SPA) in Angular. The router does two things it updates the application state when the browser URL change and it updates the URL when application state changes. When a user navigates from one page to another page will update the page content without reloading the browser even if the URL change is called routing.",
+                        "image": "",
+                        "imgTag": "",
+                        "code_snippet": "",
+                        "stackblitz_url": ""
+                    }
+                ]
+            },
+            {
+                "title": "Routing in Angular",
+                "data": [
+                    {
+                        "introduction": "In Angular the routing is implemented by using @angular/router module. Now create a new file called routing.module.ts or if you want to create with Angular CLI then type",
+                        "image": "",
+                        "code_snippet": "> ng g module routing",
+                        "code_type": "js",
+                        "stackblitz_url": ""
+                    },
+                    {
+                        "introduction": "Open routing.module.ts file and type the following code after then we are going to export the RouterModule to indicate that our core module has a dependency on this module.",
+                        "image": "",
+                        "code_snippet": "import { NgModule } from '@angular/core';\n import { RouterModule, Routes } from '@angular/router';\n import { HomeComponent } from '../home/home.component';\n\n const routes: Routes = [\n    { path: '', component: HomeComponent},\n ];\n\n @NgModule({\n   imports: [ RouterModule.forRoot(routes) ], \n   exports: [ RouterModule ],\n   declaration: [ ]\n })\n export class RoutingModule{ }",
+                        "code_type": "js",
+                        "stackblitz_url": ""
+                    },
+                    {
+                        "introduction": "Open core module app.module.ts and import the above Router Module.",
+                        "image": "",
+                        "code_snippet": "import { BrowserModule } from '@angular/platform-browser';\n import { NgModule } from '@angular/core';\n import { RoutingModule } from './routing/routing.module';\n\n @NgModule({\n   imports: [ BrowserModule, RoutingModule ], \n\n });",
+                        "code_type": "js",
+                        "stackblitz_url": ""
+                    },
+                    {
+                        "introduction": "In app.component.html, add router-outlet tag where router views is updated and appear.",
+                        "image": "",
+                        "code_snippet": "<router-outlet>  </router-outlet>",
+                        "code_type": "html",
+                        "stackblitz_url": ""
+                    }
+                ]
+            },
+            {
+                "title": "Conclustion",
+                "data": [
+                    {
+                        "introduction": "When a user navigates from one page to another page will update the page content without reloading the browser even if the URL change is called routing. We see how Angular Routing work through @angular/Router (RouterModule) and export this to our core application module that is NgModule. Here we implemented with simple route, in my next article we are going to see advance routing concepts with multiple route and child routes.",
+                        "image": "",
+                        "code_snippet": "",
+                        "stackblitz_url": ""
+                    }
+                ]
+            }
+        ]
+    }
+]

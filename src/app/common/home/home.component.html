@@ -1,0 +1,121 @@
+<div class="highlight-phone container-height">
+
+    <div class="highlight-phone container-height" *ngFor="let dashboardData of dashboardData">
+      <div class="highlight-container">
+        <div class="container"> 
+          <div class="row">
+            <div class="col-md-7">
+              <div class="intro">
+                <h2> </h2>
+                <h5> <span class="af-code"> {{ </span> {{ dashboardData.description }} <span class="af-code"> }} </span> </h5>
+                <a  *ngFor="let task of homeTask" class="btn af-button" role="button" [routerLink]="task.url"> {{task.name | uppercase}} </a>
+              </div>
+            </div>
+            <div class="col-sm-5 code-block">
+              <div class="d-none d-md-block iphone-mockup">
+                  <ngx-prism [language]="language" [hooks] = "hooks" [code]="content" [interpolation]="interpolate">
+                        {{ dashboardData.code }}
+                  </ngx-prism>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="features-contributors">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-4 col-md-4">
+              <div class="features-text">
+                <i class="fa fa-star"></i>
+                <h3>Become a contributor </h3>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-4">
+              <div class="features-text">
+                <i class="fa fa-share-alt"></i>
+                <h3>Expert Instructors</h3>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-4">
+              <div class="features-text">
+                <i class="fa  fa-leaf"></i>
+                <h3>Gamified Experience</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 features-boxed learning-container">
+        <div class="container">
+          <div class="intro">
+            <h2 class="text-center"> AngularFeed Architecture </h2>
+          </div>
+          <div class="row">
+            <img [src]="'assets/images/firebasearchitecture' + '.png'">
+          </div>
+        </div>
+      </div>
+      <div class="features-boxed">
+        <div class="container">
+          <div class="intro">
+            <h2 class="text-center">Technology we are in</h2>
+          </div>
+          <div class="row justify-content-center features">
+            <div class="col-sm-6 col-md-5 col-lg-4 item" *ngFor="let tech of ourTech" >
+              <div class="box technology-box" [routerLink]= "'/tutorials/'+tech.name+'/introduction'">
+                <img [src]="'assets/images/technology/'+ tech.name + '.png'">
+                <p class="description"> {{tech.name | uppercase}} </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="features-boxed">
+        <div class="container">
+          <div class="intro">
+            <h2 class="text-center">Online IDE we use </h2>
+          </div>
+          <div class="row justify-content-center features">
+            <div class="col-sm-6 col-md-5 col-lg-4 item" *ngFor="let tool of onlineTool">
+              <div class="box technology-box" (click)="href(tool.href)">
+                <img [src]="'assets/images/editor/' + tool.name + '.png'">
+                <p class="description"> {{tool.name | uppercase}} </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- <div class="features-boxed">
+        <div class="container">
+          <div class="intro">
+            <h2 class="text-center"> Our Services </h2>
+          </div>
+          <div class="row justify-content-center features">
+            <div class="col-sm-6 col-md-5 col-lg-4 item" *ngFor="let services of ourServices">
+              <div class="box technology-box">
+                <img [src]="'assets/images/services/' + services.name + '.png'">
+                <p class="description"> {{services.name | uppercase}} </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div class="newsletter-subscribe">
+        <div class="container">
+          <div class="intro">
+            <h2 class="text-center">Subscribe for our Newsletter</h2>
+          </div>
+          <form class="form-inline" (ngSubmit)="subscribeMe(form)" #form="ngForm" novalidate>
+            <div class="form-group">
+              <input class="form-control" type="email" name="email" placeholder="* Your Email" required [(ngModel)]="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"/>
+            </div>
+            <div class="form-group">
+              <button [disabled]="!form.valid" class="btn subscribe-button margin-top-0" type="submit">{{"Subscribe" | uppercase}}</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+</div>

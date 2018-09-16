@@ -1,0 +1,12 @@
+[{
+    "description": "The AngularFeed platform will teach students and tech geeks the best angular courses, we proposed full stack development with Firebase (TAFStack) and Node (TANStack).",
+    "code": "> ng new project-name;\n > ng serve\n > ng build --prod --aot\n > firebase deploy",
+    "testimonials": [
+        {
+            "name": "Chandra",
+            "designation": "Web Developer",
+            "profile-img": "",
+            "written": "AngularFeed is well covered angular resource. My team and my self are very happy after reading angularfeed material."
+        }
+    ]
+}]

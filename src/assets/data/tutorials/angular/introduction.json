@@ -1,0 +1,44 @@
+[
+    {
+        "postedBy": "ChandraShekher",
+        "email": "chandrashekher@hotmail.com",
+        "title": "Introduction",
+        "image": "angularnodesetup.jpg",
+        "technology": "typescript",
+        "url": "introduction",
+        "index": [
+            {
+                "title": "",
+                "data": [
+                    {
+                        "introduction": "Angular is a  Backend-as-a-Service(BaaS) as well as Function-as-a-Service(FaaS) used for next generation app development platform on Google Cloud. By using Firebase we just need to focus on our user interface design or client side code because Firebase handles all kind of server functionalities such as storage, database, authentication and many more. We need not  manage any servers or write server code/APIs.",
+                        "image": "firebase-intro.png",
+                        "code_snippet": "",
+                        "stackblitz_url": "",
+                        "list": []
+                    }
+                ]
+            },
+            {
+                "title": "Features of Firebase",
+                "data": [
+                    {
+                        "introduction": "",
+                        "list": [
+                            "We can build apps fast, without managing infrastructure.",
+                            "Firebase supported on iOS, Android, Web, C++, Unity.",
+                            "Node, Python, Go, and JAVA server SDKs.",
+                            "Automatic, multi-region data replication with strong consistency.",
+                            "Real-time data sync.",
+                            "Offline access to the WEB SDK.",
+                            "Documents and Collections with powerful querying.",
+                            "Its supported by Google.",
+                            "Free with Spark plan.",
+                            "Auto scale-up with Blaze Plan - Pay as you go."
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

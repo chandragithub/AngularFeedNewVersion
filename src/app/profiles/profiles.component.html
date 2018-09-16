@@ -1,0 +1,84 @@
+<main class="page cv-page container-height">
+  <div class="" *ngIf="isPageLoadingError">
+    <page-not-found> </page-not-found>
+  </div>
+  <div *ngFor="let profile of profileList">
+    <section class="portfolio-block block-intro border-bottom">
+      <div class="container">
+        <div class="avatar">
+          <img class="avatar" [src]="profile.url"> </div>
+        <div class="about-me">
+          <p>Hello! I am
+            <strong> {{ profile.name }}</strong> {{ profile.description }}</p>
+          <a class="btn af-button" role="button" [href]="'mailto:' + profile.email">Hire me</a>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio-block cv">
+      <div class="container">
+        <div class="work-experience group" *ngFor="let experience of profile.experience">
+          <div class="heading">
+            <h2 class="text-center"> {{ experience.title }}</h2>
+          </div>
+          <div class="item" *ngFor="let experienceData of experience.data">
+            <div class="row">
+              <div class="col-md-6">
+                <h3> {{ experienceData.designation }}</h3>
+                <h4 class="organization"> {{experienceData.company}}</h4>
+              </div>
+              <div class="col-md-6">
+                <span class="period"> {{ experienceData.fromDate }} - {{ experienceData.toDate }}</span>
+              </div>
+            </div>
+            <p class="text-muted"> {{experienceData.description }}</p>
+          </div>
+        </div>
+        <div class="education group" *ngFor="let education of profile.education">
+          <div class="heading">
+            <h2 class="text-center">{{education.title}}</h2>
+          </div>
+          <div class="item" *ngFor="let educationData of education.data">
+            <div class="row">
+              <div class="col-md-6">
+                <h3>{{educationData.degree}}</h3>
+                <h4 class="organization"> {{educationData.university}}</h4>
+              </div>
+              <div class="col-md-6">
+                <span class="period"> {{educationData.fromDate}} - {{educationData.toDate}}</span>
+              </div>
+            </div>
+            <p class="text-muted"> </p>
+          </div>
+        </div>
+        <div class="group">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="skills portfolio-info-card" *ngFor="let skill of profile.skills">
+                <h2>{{ skill.title }}</h2>
+                <div *ngFor="let skillData of skill.data">
+                  <h3>{{skillData.technology}}</h3>
+                  <div class="progress">
+                    <progressbar [value]="skillData.levels" [striped]="false"> </progressbar>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="contact-info portfolio-info-card">
+                <h2>Find me on.</h2>
+                <div *ngFor="let connect of profile.connect"> <a [href]="connect.url" target="_blank"> <i [ngClass]="connect.icon"></i>
+                    {{connect.brand | titlecase}} </a> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hobbies group">
+          <div class="heading">
+            <h2 class="text-center"> Hobbies </h2>
+          </div>
+          <p class="text-center text-muted"> {{profile.hobbies}} </p>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>

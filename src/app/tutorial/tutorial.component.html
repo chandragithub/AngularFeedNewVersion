@@ -1,0 +1,27 @@
+<div class="container-height">
+  <div class="highlight-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="intro">
+            <i class="fa fa-book"></i>
+            <h5> {{ "tutorials" | uppercase }} </h5>
+            <div class=""> {{ "Find our top tutorial in below technologies" | uppercase }} </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="features-boxed">
+    <div class="container">
+      <div class="row justify-content-center features">
+        <div class="col-sm-6 col-md-5 col-lg-4 item" *ngFor="let tutorial of ourTutorials">
+          <div class="box" [routerLink]="['/tutorials/', tutorial.url, 'introduction']">
+            <img [src]="'assets/images/technology/'+ tutorial.name + '.png'">
+            <p class="description"> {{ tutorial.name | uppercase }} </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

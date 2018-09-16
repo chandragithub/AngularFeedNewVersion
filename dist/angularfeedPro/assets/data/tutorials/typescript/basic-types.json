@@ -1,0 +1,155 @@
+[
+    {
+        "postedBy": "ChandraShekher",
+        "email": "chandrashekher@hotmail.com",
+        "title": "Basic Types",
+        "image": "angularnodesetup.jpg",
+        "technology": "typescript",
+        "index": [
+            {
+                "title": "",
+                "data": [
+                    {
+                        "introduction": "After installing TypeScript in your computer successfully, it's time to go little ahead and learn basic types of TypeScript. TypeScript has many primitive data types which can be used for defining types of Variable, functions and Properites.",
+                        "image": "",
+                        "code_snippet": "",
+                        "stackblitz_url": ""
+                    }
+                ]
+            },
+            {
+                "title": "Boolean",
+                "data": [
+                    {
+                        "introduction": "Boolean type represents a simple true or false value. A Boolean value is declared using type boolean in TypeScript.",
+                        "code_snippet": "let isVisisble: boolean = false;\n isVisisble = true;",
+                        "code_type": "js"
+                    }
+                ]
+            },
+            {
+                "title": "Number",
+                "data": [
+                    {
+                        "introduction": "Numbers are all floating-point values in TypeScript. A number is declared using type number in TypeScript. TypeScript supports decimal, hexadecimal, binary, and octal literals for numbers.",
+                        "code_snippet": "let n1: number = 20;",
+                        "code_type": "js"
+                    }
+                ]
+            },
+            {
+                "title": "String",
+                "data": [
+                    {
+                        "introduction": "String type represents a textual value. A string is declared using type string in TypeScript. Strings are surrounded by double quotes (\") or single quotes ('). It’s up to the development team to choose whether to use double quotes or single quotes. The key point is to remain consistent across the whole code base. Single quotes are more popular because they are easier to type than double quotes that require the shift key.",
+                        "code_snippet": "let text: string = 'Hello World';",
+                        "code_type": "js"
+                    },
+                    {
+                        "introduction": "TypeScript also supports ES6 template literals, which allow embedded expressions in string literals. Template literals are surrounded by backticks (`). Expressions in the template literals are specified in the form of ${expression}.",
+                        "code_snippet": "let a: number = 1;\n let b: number = 2;\n let result: string = `${a} + ${b} = ${a + b}`; // -> string \"1 + 2 = 3\"",
+                        "code_type": "js"
+                    }
+                ]
+            },
+            {
+                "title": "Null and Undefined",
+                "data": [
+                    {
+                        "introduction": "null and undefined are special values in JavaScript. In TypeScript, null and undefined also have a type with name null and undefined, respectively. These two types only have a single value.",
+                        "code_snippet": "let v1: null = null;\n let v2: undefined = undefined;",
+                        "code_type": "js"
+                    },
+                    {
+                        "introduction": "By default, it’s allowed to assign null and undefined to variables declared with other types. For example, the code below assigns null to the variable v with type string.",
+                        "code_snippet": "let v: string = null;",
+                        "code_type": "js"
+                    }
+                ]
+            },
+            {
+                "title": "Array",
+                "data": [
+                    {
+                        "introduction": "Array type represents a sequence of values. The type of an array depends on the type of its elements. Appending [] to the element type creates the array type. In the code below, number[] is the type of arrays with numbers, while string[] is the type of arrays with strings. Array type can also be used for custom classes or interfaces. For example, Point[] represents an array of Point objects.",
+                        "code_snippet": "let numbers: number[] = [1, 2, 3];\n let strings: string[] = ['a', 'b', 'c'];",
+                        "code_type": "js"
+                    }
+                ]
+            },
+            {
+                "title": "Tuple",
+                "data": [
+                    {
+                        "introduction": "The elements of an array are generally of the same type, that is, a homogeneous array. If an array contains a fixed number of elements of different types, that is, a heterogeneous array, it’s called a tuple. The tuple type is declared as an array of element types. In the code below, the tuple points has three elements with types number, number, and string.",
+                        "code_snippet": "let points: [number, number, string] = [10, 10, 'P1'];",
+                        "code_type": "js"
+                    },
+                    {
+                        "introduction": "Tuples are useful when returning multiple values from a function because a function can only have at most one return value.",
+                        "code_snippet": "",
+                        "code_type": "js"
+                    }
+                ]
+            },
+            {
+                "title": "Enum",
+                "data": [
+                    {
+                        "introduction": "Enum type represents a fixed set of values. Each value in the set has a meaningful name and a numeric value associated with the name. In the code below, the value of status is a number with value 1. By default, the numeric values of enum members start from 0 and increase in sequence. In the enum Status, Status.Started has value 0, Status.Stopped has value 1, and so on.",
+                        "code_snippet": "enum Status { Started, Stopped, Error };\n let status: Status = Status.Stopped;",
+                        "code_type": "js"
+                    }
+                ]
+            },
+            {
+                "title": "Any",
+                "data": [
+                    {
+                        "introduction": "When a value is declared with type any, no type checking is done for this value.In the code below, the variable val is declared as any type. We can assign a string, a number, and a Boolean value to it.",
+                        "code_snippet": "let val: any = 'Hello World';\n val = 100; // valid \n val = true; // valid",
+                        "code_type": "js"
+                    }
+                ]
+            },
+            {
+                "title": "Void",
+                "data": [
+                    {
+                        "introduction": "Void means no type. It’s commonly used as the return type of functions that don’t return a value. The return type of the sayHello function below is void.",
+                        "code_snippet": "function sayHello(): void { \n   console.log('Hello');\n }",
+                        "code_type": "js"
+                    },
+                    {
+                        "introduction": "void can also be used as a variable type. In this case, the only allowed values for this variable are undefined and null."
+                    }
+                ]
+            },
+            {
+                "title": "Never",
+                "data": [
+                    {
+                        "introduction": "Never is a special type related to control flow. It represents the type of values that should never occur. If a function always throws an exception or it contains an infinite loop that makes the function never return, the return type of this function is never. The function neverHappens in the code below always throws an Error object, so its return type is never.",
+                        "code_snippet": "function neverHappens(): never { \n   throw new Error('Boom!');\n }",
+                        "code_type": "js"
+                    }
+                ]
+            },
+            {
+                "title": "Union",
+                "data": [
+                    {
+                        "introduction": "Union type represents a value that can be one of several types. The allowed types are separated with a vertical bar (|). In the code below, the type of the variable stringOrNumber can be either string or number.",
+                        "code_snippet": "let stringOrNumber: string | number = 'Hello World';\n stringOrNumber = 3; \nstringOrNumber = 'Test';",
+                        "code_type": "js"
+                    },
+                    {
+                        "introduction": "Union types can also be used to create enum-like string literals. In the code below, the type TrafficColor only allows three values.",
+                        "code_snippet": "type TrafficColor = 'Red' | 'Green' | 'Yellow'; \n let color: TrafficColor = 'Red';",
+                        "code_type": "js"
+                    }
+                ]
+            }
+        ]
+    }
+]

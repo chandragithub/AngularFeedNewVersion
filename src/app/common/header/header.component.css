@@ -1,0 +1,95 @@
+.navigation-clean-button {
+  background:#fff;
+  padding-top:.75rem;
+  padding-bottom:.25rem;
+  border-radius:0;
+  box-shadow:none;
+  border:none;
+  margin-bottom:0;
+  background-color: var(--brand);
+  border-bottom: 1px solid #73b1ab;
+  color:#ffffff;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-size: 30px;
+}
+.navbar-brand:hover {
+  color: #fff;
+}
+
+.gradient {
+  color:#fff;
+}
+
+.brand-one {
+  color: var(--sub-brand);
+  font-size: 26px;
+}
+.brand-two {
+  color: var(--sub-sub-brand);
+  font-size: 26px;
+}
+
+.af-tabs li a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #3e4a53;
+}
+.af-tabs li a:hover {
+  color: var(--sub-brand);
+}
+a.active {
+   color: var(--sub-brand) !important; 
+}
+
+.logo img {
+    vertical-align: top;
+    border-style: none;
+    width: 45px;
+    height: 35px;
+}
+
+.navbar-toggler {
+    padding: 0 !important;
+    line-height: 0 !important;
+}
+.menu-bar {
+    color: #fff;
+    font-size: 25px;
+    margin-top: 15px;
+}
+.overlay {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(25deg,#50adad,#69bfb7 50%);
+    z-index: 10;
+    text-align: center;
+    padding-top: 65px;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+.overlay a {
+  color: #dde7f3;
+  font-size: 20px;
+}
+.overlay a:hover {
+  color: #dde7f3;
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--sub-sub-brand);
+}
+.close-submenu {
+    position: fixed;
+    font-size: 26px;
+    right: 15px;
+    top: 15px;
+}
+
+.mobile-menu {
+    color: #3c3d41;
+}

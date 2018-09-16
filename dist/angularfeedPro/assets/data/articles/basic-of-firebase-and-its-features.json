@@ -1,0 +1,89 @@
+[
+    {
+        "postedBy": "ChandraShekher",
+        "email": "chandrashekher@hotmail.com",
+        "title": "Basic of firebase and its features.",
+        "image": "",
+        "technology": "firebase",
+        "url": "basic-of-firebase-and-its-features",
+        "index": [
+            {
+                "title": "Introduction",
+                "data": [
+                    {
+                        "introduction": "Cross-site Scripting attack is also known as XSS which allows attacker to inject client side scripts into web application viewed by other users. This is the most vulnerable attack caused to the user of the application which may cause loss of important information such as credentials, banking details, password, personal information and many more.",
+                        "image": "",
+                        "code_snippet": "",
+                        "stackblitz_url": ""
+                    },
+                    {
+                        "introduction": "Cross-site Scripting is of two type: Persistent XSS and Non-Persistent XSS.",
+                        "image": "",
+                        "code_snippet": "",
+                        "stackblitz_url": ""
+                    },
+                    {
+                        "introduction": "Persistent XSS: It is also know as Stored XSS which is more dangerous where the malicious script is injected directly to the web application and always stored in web application.",
+                        "image": "",
+                        "code_snippet": "",
+                        "stackblitz_url": ""
+                    },
+                    {
+                        "introduction": "Non-Persistent XSS: It is also known as Reflected XSS which is less dangerous than Persistent XSS because the malicious script is inject directly to the user’s browser through web application.",
+                        "image": "",
+                        "code_snippet": "",
+                        "stackblitz_url": ""
+                    },
+                    {
+                        "introduction": "The websites which allow users to share content, video sharing, messaging and social network are the main target of XSS attackers. Every time the user click on the malicious page in web application, the malicious script is transmitted to the victim’s browser and the attacker can easily access your personal information.",
+                        "image": "",
+                        "code_snippet": "",
+                        "stackblitz_url": ""
+                    }
+                ]
+            },
+            {
+                "title": "How to handle Cross-site Scripting in Angular",
+                "data": [
+                    {
+                        "introduction": "Angular doesn’t handle all type XSS by its own to prevent XSS attack, we must prevent our application by not allowing the vulnerable code into web pages - DOM (Document Object Model). We should not allow any <script> tag to the applications input fields.",
+                        "image": "",
+                        "code_snippet": "<p> Hi this is <script> alert(‘Hello’) </script> World </p>",
+                        "code_type": "html",
+                        "stackblitz_url": ""
+                    },
+                    {
+                        "introduction": "Angular checks some sanity checking through the list of dynamic string coming from component or Services in the form of JSON. Angular uses DOM Sanitizer to check vulnerable scripts in the string and remove unsafe value and allows safe value to the DOM this process is called as Sanitization.",
+                        "image": "",
+                        "code_snippet": "",
+                        "stackblitz_url": ""
+                    },
+                    {
+                        "introduction": "In DOM the DOM Sanitiser removes the un-safe value and allow safe character to the page.",
+                        "image": "",
+                        "code_snippet": "<p> Hi this is console.log(‘Hello’) </p>",
+                        "code_type": "html",
+                        "stackblitz_url": ""
+                    },
+                    {
+                        "introduction": "Normally, Angular automatically sanitises the URL in a, img, iframe tag and prevent un-safe or dangerous link to enter into the application by throwing error on browser console.",
+                        "image": "",
+                        "code_snippet": "",
+                        "stackblitz_url": ""
+                    }
+                ]
+            },
+            {
+                "title": "",
+                "data": [
+                    {
+                        "introduction": "",
+                        "image": "",
+                        "code_snippet": "",
+                        "stackblitz_url": ""
+                    }
+                ]
+            }
+        ]
+    }
+]

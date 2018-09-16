@@ -1,0 +1,42 @@
+[
+    {
+        "postedBy": "ChandraShekher",
+        "email": "chandrashekher@hotmail.com",
+        "title": "Classes",
+        "image": "angularnodesetup.jpg",
+        "technology": "typescript",
+        "index": [
+            {
+                "title": "",
+                "data": [
+                    {
+                        "introduction": "Class is the fundamental concept in object-oriented programming languages. ES6 added the classes concept to JavaScript. TypeScript also supports classes.",
+                        "image": "",
+                        "code_snippet": "",
+                        "stackblitz_url": ""
+                    }
+                ]
+            },
+            {
+                "title": "",
+                "data": [
+                    {
+                        "introduction": "",
+                        "code_snippet": "",
+                        "code_type": "js"
+                    }
+                ]
+            },
+            {
+                "title": "",
+                "data": [
+                    {
+                        "introduction": "",
+                        "code_snippet": "",
+                        "code_type": "js"
+                    }
+                ]
+            }
+        ]
+    }
+]

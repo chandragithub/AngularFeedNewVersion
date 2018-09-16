@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Introduction",
+        "url": "introduction"
+    },
+    {
+        "title": "Angular Architecture",
+        "url": "firebase-architecture"
+    },
+    {
+        "title": "Create Firebase Account",
+        "url": "create-firebase-account"
+    },
+    {
+        "title": "Deploy Angular application with Firebase",
+        "url": "deploy-angular-application-with-firebase"
+    }
+]

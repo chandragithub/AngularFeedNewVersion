@@ -1,0 +1,99 @@
+[
+    {
+        "name": "ChandraShekher Polimera.",
+        "description": "I work as interface and front end developer. I have passion for pixel perfect, minimal and easy to use interfaces.",
+        "email": "chandrashekher@hotmail.com",
+        "url": "assets/images/profile/chandrashekher.png",
+        "hobbies": "Playing Chess, Surfing and Programming.",
+        "experience": [
+            {
+                "title": "WORK EXPERIENCE",
+                "data": [
+                    {
+                        "designation": "Senior UI/UX Developer and Consultant",
+                        "company": "fiserv",
+                        "role":"Responsible for entire development of SDLC process with proper testing and deployment.",
+                        "fromDate":"09/2016",
+                        "toDate": "Present"
+                    },
+                    {
+                        "designation": "Angular Developer",
+                        "company": "John Deere",
+                        "role": "Responsible for entire development of SDLC process with proper testing and deployment.",
+                        "fromDate": "10/2015",
+                        "toDate": "09/2016"
+                    },
+                    {
+                        "designation": "Programmer Consultant",
+                        "company": "Capgemini",
+                        "role": "Responsible for entire development of SDLC process with proper testing and deployment.",
+                        "fromDate": "10/2015",
+                        "toDate": "09/2016"
+                    },
+                    {
+                        "designation": "Programmer Analyst",
+                        "company": "Cognizant",
+                        "role": "",
+                        "fromDate": "03/2013",
+                        "toDate": "10/2015"
+                    }
+                ]
+            }
+        ],
+        "education": [
+            {
+                "title": "EDUCATION",
+                "data": [
+                    {
+                        "degree": "Electronics and Communication Engineering - BE",
+                        "university": "Jawaharlal Nehru Technical University",
+                        "fromDate": "09/2006",
+                        "toDate": "05/2010"
+                    },
+                    {
+                        "degree": "Power Electronics - ME",
+                        "university": "Sathyabama University",
+                        "fromDate": "09/2010",
+                        "toDate": "05/2012"
+                    }
+                ]
+            }
+        ],
+        "skills": [
+            {
+                "title" : "Skills",
+                "data" : [
+                    {
+                        "technology": "HTML",
+                        "levels": "90"
+                    },
+                    {
+                        "technology": "CSS",
+                        "levels": "80"
+                    },
+                    {
+                        "technology": "JAVASCRIPT",
+                        "levels": "70"
+                    },
+                    {
+                        "technology": "ANGULAR",
+                        "levels": "70"
+                    }
+                ]
+            }
+      ],
+      "connect": [
+          {
+              "brand": "linkedin",
+              "url": "https://linkedin.com/in/chandrashekherpolimera",
+              "icon":"fa fa-linkedin"
+          },
+          {
+              "brand": "github",
+                "url": "https://github.com/chandragithub",
+                "icon": "fa fa-github"
+          }
+
+      ]
+    }
+]

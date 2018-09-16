@@ -1,0 +1,47 @@
+[
+    {
+        "postedBy": "ChandraShekher",
+        "email": "chandrashekher@hotmail.com",
+        "title": "Variable Declaration ",
+        "image": "angularnodesetup.jpg",
+        "technology": "typescript",
+        "index": [
+            {
+                "title": "",
+                "data": [
+                    {
+                        "introduction": "In JavaScript we used to declare a variable with <i> var </i> keyword in which we can't create  blocked level scope function and constant value. TypeScript has two type of variable declaration they are <i> const </i> and <i> let </i> and which are used to create block level scope and constant value declaration,",
+                        "image": "",
+                        "code_snippet": "",
+                        "stackblitz_url": ""
+                    }
+                ]
+            },
+            {
+                "title": "const",
+                "data": [
+                    {
+                        "introduction": "const keyword is use to assign a static value to the data types, constant means it's value is always constant and never change through out it's lifecycle.",
+                        "code_snippet": "const appleColor: string = 'red'",
+                        "code_type": "js"
+                    },
+                    {
+                        "introduction": "If you try to re-assign the value to the const variables then it will throw type declaration error, because we can't change the value of a constant once it's been assigned initially.",
+                        "code_snippet": "const appleColor: string = 'orange' // error",
+                        "code_type": "js"
+                    }
+                ]
+            },
+            {
+                "title": "let",
+                "data": [
+                    {
+                        "introduction": "let keyword is use to assign a non-static value to the data types, we can modify the value of a variable at any time.",
+                        "code_snippet": "let isVisible: boolean = false;\n isVisible = true;",
+                        "code_type": "js"
+                    }
+                ]
+            }
+        ]
+    }
+]

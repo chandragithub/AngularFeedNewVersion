@@ -1,0 +1,78 @@
+[
+    {
+        "name": "Goutami Vegi",
+        "description": "I work as  Quality Assurance Engineer for web application. I have passion for test with 100% Coverage, and delivering defect free Application",
+        "email": "goutamijan8@gmail.com",
+        "url": "assets/images/profile/goutamivegi.png",
+        "hobbies": "Playing Chess, Surfing and Programming.",
+        "experience": [
+            {
+                "title": "WORK EXPERIENCE",
+                "data": [
+                    {
+                        "designation": "Quality Assurance Engineer",
+                        "company": " MRPIT Infotech",
+                        "role": "Responsible for entire development of STLC process with proper testing and deployment.",
+                        "fromDate": "08/2015",
+                        "toDate": "12/2017"
+                    },
+                    {
+                        "designation": "Quality Assurance Engineer",
+                        "company": "Tech Mahindra",
+                        "role": "Responsible for entire development of STLC process with proper testing and deployment.",
+                        "fromDate": "01/2015",
+                        "toDate": "07/2015"
+                    }
+                ]
+            }
+        ],
+        "education": [
+            {
+                "title": "EDUCATION",
+                "data": [
+                    {
+                        "degree": "Electronics and Communication Engineering - BE",
+                        "university": "Chattisgarh Swami Vivekananda University",
+                        "fromDate": "06/20010",
+                        "toDate": "05/2014"
+                    }
+                ]
+            }
+        ],
+        "skills": [
+            {
+                "title": "Skills",
+                "data": [
+                    {
+                        "technology": "Manual Testing",
+                        "levels": "90"
+                    },
+                    {
+                        "technology": "Funcational Testing",
+                        "levels": "80"
+                    },
+                    {
+                        "technology": "Regression Testing",
+                        "levels": "70"
+                    },
+                    {
+                        "technology": "Accessibility Testing",
+                        "levels": "70"
+                    }
+                ]
+            }
+        ],
+        "connect": [
+            {
+                "brand": "linkedin",
+                "url": "https://linkedin.com/in/chandrashekherpolimera",
+                "icon": "fa fa-linkedin"
+            },
+            {
+                "brand": "github",
+                "url": "https://github.com/chandragithub",
+                "icon": "fa fa-github"
+            }
+        ]
+    }
+]

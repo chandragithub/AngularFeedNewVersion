@@ -1,0 +1,16 @@
+.block {
+  color:#fff;
+  font-family:'Fira Sans', sans-serif;
+  padding:20% 20px;
+  text-align:center;
+}
+
+.-berry {
+  background:#71bbb4;
+}
+
+.edge--top {
+  position:relative;
+  z-index:1;
+}
+
